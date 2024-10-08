@@ -3,9 +3,6 @@ import Image from "next/image";
 import Avatar from "./image/Avatar1.png";
 
 const Page1: FC = () => {
-<<<<<<< HEAD
-  return <div></div>;
-=======
   return (
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center"> 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start p-16 max-w-7xl"> 
@@ -43,7 +40,6 @@ const Page1: FC = () => {
       </div>
     </main>
   );
->>>>>>> a7e9d9c3ebb504c1f755b1bbc077126b612a72bf
 };
 
 export default Page1;
