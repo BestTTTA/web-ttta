@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from 'next/image';
+import 
 
 const entrepreneurIcon = "/images/entrepreneur.png";
 const educationIcon = "/images/mortarboard.png";
