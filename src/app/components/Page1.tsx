@@ -25,9 +25,10 @@ const Page1: FC = () => {
               firsthand the life of a startup
             </p>
           </div>
-          <button className="bg-white text-black hover:bg-orange-500 px-6 py-3 rounded-none">
+          <button className="px-6 py-4 text-sm bg-white text-black rounded-none shadow-sm hover:-translate-y-1 hover:scale-100 hover:bg-orange-500 ease-in-out delay-150 duration-300">
             LEARN MORE
           </button>
+
         </div>
         <div style={{ position: 'relative', width: '700px', height: '600px' }}>
           <Image
