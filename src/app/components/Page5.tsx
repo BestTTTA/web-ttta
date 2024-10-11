@@ -13,7 +13,8 @@ const Page5: FC = () => {
 
             <div className="flex flex-col md:flex-row max-w-7xl">
                 <div className="md:w-1/2 mt-8 md:mt-0 md:mr-16">
-                    <h1 className="text-4xl font-bold mb-4">TOKAMAK</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-center">TOKAMAK</h1>
+                    <div className="text-orange-500 text-3xl font-bold text-right">-----</div>
 
                     <p className="text-gray-700 mb-8">
                         Lorem Ipsum Dolor Sit Amet Consectetur. Viae Arcu Maecenas Eu <br />
@@ -28,7 +29,7 @@ const Page5: FC = () => {
                     </div>
 
                     <div className="flex items-center">
-                        <button className="mt-4 text-black hover:underline flex items-center">
+                        <button className="mt-4 text-black hover:underline flex items-center" title="ไปยังหนัา...">
                             Read More
                             <Image src={arrow} alt="arrow" width={20} height={10} className="ml-2" />
                         </button>

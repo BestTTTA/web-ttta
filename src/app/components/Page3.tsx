@@ -40,8 +40,8 @@ const Page2: FC = () => {
           </div>
         </div>
 
-        {/* Text Section */}
-        <div className="md:w-1/2 w-full relative z-10"> {/* Text section on the right side */}
+        
+        <div className="md:w-1/2 w-full relative z-10"> 
           <div className="flex items-center mb-8 md:mb-16">
             <div className="bg-orange-500 w-4 h-4 mr-2"></div>
             <p>VISION</p>
@@ -57,7 +57,7 @@ const Page2: FC = () => {
           economy so that Thailand could one day produce knowledge-based  <br/>
           instead of commodity-based products for the world...
           </p>
-          <button className="mt-8 text-black hover:underline flex items-center">
+          <button className="mt-2 text-black hover:underline flex items-center" title="ไปยังหน้า...">
             Read More
             <Image src={arrow} alt="arrow" width={20} height={10} />
           </button>

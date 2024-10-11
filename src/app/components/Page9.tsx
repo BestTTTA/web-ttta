@@ -4,15 +4,15 @@ import Jewellery from './image/Jewellery.png';
 import Origgin from './image/Origgin.png';
 import Kentech from './image/Kentech.png';
 import SUT from './image/SUT.png';
-
+const today = new Date();
+const day = today.getDate();
+const month = today.toLocaleString('default', { month: 'long' });
 const Page9 = () => {
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      {/* Upcoming Events Section */}
       <h2 style={{ fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '24px' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
           <span>Upcoming Events</span>
-          {/* Calendar SVG Icon with Color #F57819 */}
           <svg
             width="30"
             height="30"
@@ -26,17 +26,16 @@ const Page9 = () => {
         </div>
       </h2>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px', gap: '20px' }}>
-        <div style={{ backgroundColor: '#2b3a50', color: '#fff', padding: '20px', borderRadius: '8px', width: '80px', textAlign: 'center' }}>
-          <h3 style={{ margin: 0, fontSize: '24px' }}>14</h3>
-          <p style={{ margin: 0, fontSize: '18px' }}>July</p>
+        <div style={{ backgroundColor: '#2b3a50', color: '#fff', padding: '20px', borderRadius: '0px', width: '100px', textAlign: 'center' }}>
+          <h3 style={{ margin: 0, fontSize: '24px' }}>{day}</h3>
+          <p style={{ margin: 0, fontSize: '16px' }}>{month}</p>
         </div>
         <div style={{ textAlign: 'left' }}>
-          <p style={{ fontWeight: 'bold', margin: 0, fontSize: '18px' }}>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
-          <p style={{ margin: 0, fontSize: '16px', color: '#555' }}>Velit Placerat Eget A Viverra Nunc Consequat.</p>
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur.</p>
+          <p>Velit Placerat Eget A Viverra Nunc Consequat.</p>
         </div>
       </div>
 
-      {/* Collaboration Partners Section */}
       <h3 style={{ marginTop: '80px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '22px' }}>Collaboration Partners</h3>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', gap: '40px', alignItems: 'center' }}>
         <div>
@@ -52,8 +51,6 @@ const Page9 = () => {
           <Image src={SUT} alt="Partner" width={150} height={75} />
         </div>
       </div>
-
-      {/* Newsletter Section */}
       <div style={{ backgroundColor: '#f4f4f4', padding: '40px', marginTop: '80px', borderRadius: '8px' }}>
         <h3 style={{ fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', fontSize: '22px' }}>Subscribe Newsletter</h3>
         <p style={{ fontSize: '16px', color: '#666' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>

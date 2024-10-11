@@ -27,7 +27,7 @@ const Page2: FC = () => {
             affiliated companies in knowledge - based business to solve <br />
             real problems of the industry...
           </p>
-          <button className="mt-8 text-black hover:underline flex items-center">
+          <button className="mt-2 text-black hover:underline flex items-center" title="ไปยังหน้า...">
             Read More
             <Image src={arrow} alt="arrow" width={20} height={10} />
           </button>

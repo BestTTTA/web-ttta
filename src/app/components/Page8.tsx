@@ -31,52 +31,90 @@ const Page8 = () => {
     );
   };
 
+  const getProfileIndex = (index) => {
+    if (index < 0) return profiles.length - 1;
+    if (index >= profiles.length) return 0;
+    return index;
+  };
+
   return (
     <div style={styles.container}>
-      {/* Header Section */}
-      <div style={styles.orangeBox}></div> {/* Move this above the heading */}
+      <div style={styles.orangeBox}></div>
       <div style={styles.headingContainer}>
         <h1 style={styles.headingText}>Quotes from Successful People</h1>
       </div>
 
-      {/* Profile Carousel */}
       <div style={styles.profileCarousel}>
-        {/* Left Arrow */}
         <div style={styles.arrowLeft} onClick={handlePrev}>
           ←
         </div>
 
-        {/* Profile Pictures */}
         <div style={styles.profileContainer}>
-          {profiles.map((profile, index) => (
-            <div
-              key={profile.id}
-              style={{
-                ...styles.profile,
-                border: index === currentProfile ? '4px solid #F57819' : '2px solid lightgray',
-              }}
-            >
-              <Image
-                src={profile.image}
-                alt={`Profile ${index + 1}`}
-                style={styles.profileImg}
-                width={100}
-                height={100}
-              />
-            </div>
-          ))}
+          {/* Previous Profile */}
+          <div
+            style={{
+              ...styles.profile,
+              transform: 'scale(0.8)',
+              opacity: 0.5,
+              border: '2px solid lightgray',
+            }}
+          >
+            <Image
+              src={profiles[getProfileIndex(currentProfile - 1)].image}
+              alt="Previous Profile"
+              width={80}
+              height={80}
+              style={styles.profileImg}
+            />
+          </div>
+
+          <div
+            key={profiles[currentProfile].id}
+            style={{
+              ...styles.profile,
+              transform: 'scale(1.5)',
+              zIndex: 10,
+              border: '4px solid #F57819',
+            }}
+          >
+            <Image
+              src={profiles[currentProfile].image}
+              alt="Current Profile"
+              width={120}
+              height={120}
+              style={styles.profileImg}
+            />
+          </div>
+
+          {/* Next Profile */}
+          <div
+            style={{
+              ...styles.profile,
+              transform: 'scale(0.8)',
+              opacity: 0.5,
+              border: '2px solid lightgray',
+            }}
+          >
+            <Image
+              src={profiles[getProfileIndex(currentProfile + 1)].image}
+              alt="Next Profile"
+              width={80}
+              height={80}
+              style={styles.profileImg}
+            />
+          </div>
         </div>
 
-        {/* Right Arrow */}
         <div style={styles.arrowRight} onClick={handleNext}>
           →
         </div>
       </div>
 
-      {/* Quote Section */}
       <div style={styles.quoteSection}>
         <blockquote style={styles.quote}>
-          <p style={styles.quoteTitle}><strong>Stay Hungry Stay Foolish</strong></p>
+          <p style={styles.quoteTitle}>
+            <strong>Stay Hungry Stay Foolish</strong>
+          </p>
           <p style={styles.quoteText}>
             We should never stop learning and we should always try new things. We
             should be courageous and never be afraid to go the extra mile. We must
@@ -97,10 +135,10 @@ const styles = {
     padding: '20px',
   },
   orangeBox: {
-    width: '40px',
-    height: '40px',
-    backgroundColor: '#F57819', // Updated color
-    margin: '0 auto 20px auto', // Center and add space below
+    width: '20px',
+    height: '20px',
+    backgroundColor: '#F57819',
+    margin: '0 auto 20px auto',
   },
   headingContainer: {
     marginBottom: '20px',
@@ -123,7 +161,11 @@ const styles = {
   },
   profileContainer: {
     display: 'flex',
-    gap: '10px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '20px',
+    position: 'relative',
+    width: '400px',
   },
   profile: {
     width: '80px',
@@ -131,7 +173,10 @@ const styles = {
     borderRadius: '50%',
     overflow: 'hidden',
     display: 'flex',
-    transition: 'border 0.3s ease',
+    justifyContent: 'center',
+    alignItems: 'center',
+    transition: 'transform 0.3s ease, border 0.3s ease, opacity 0.3s ease',
+    cursor: 'pointer',
   },
   profileImg: {
     borderRadius: '50%',

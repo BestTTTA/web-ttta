@@ -25,7 +25,7 @@ const Page1: FC = () => {
               firsthand the life of a startup
             </p>
           </div>
-          <button className="px-6 py-4 text-sm bg-white text-black rounded-none shadow-sm hover:-translate-y-1 hover:scale-100 hover:bg-orange-500 ease-in-out delay-150 duration-300">
+          <button className="px-6 py-4 text-sm bg-white text-black rounded-none shadow-sm hover:-translate-y-1 hover:scale-100 hover:bg-orange-500 ease-in-out delay-1 duration-100" title="ไปยังหน้า...">
             LEARN MORE
           </button>
 
