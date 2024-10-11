@@ -7,8 +7,6 @@ const Page2: FC = () => {
   return (
     <div className="container mx-auto px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16 flex flex-col items-center justify-center">
       <div className="flex flex-col md:flex-row max-w-7xl">
-
-        {/* Text Section */}
         <div className="md:w-1/2 w-full">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">THE TIGER TEAM ACADEMY</h1>
           <div className="flex items-center mb-8 md:mb-16">

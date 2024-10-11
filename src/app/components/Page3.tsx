@@ -3,12 +3,10 @@ import Image from "next/image";
 import Avatar from "./image/Avatar3.png";
 import arrow from "./image/Arrow.png";
 
-const Page2: FC = () => {
+const Page3: FC = () => {
   return (
     <div className="bg-gray-100 container mx-auto px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-64 flex flex-col items-center justify-center">
       <div className="flex flex-col-reverse md:flex-row max-w-7xl relative"> {/* Set flex-col-reverse on small screens */}
-
-        {/* Image Section */}
         <div className="md:w-1/2 w-full mt-8 md:mt-0 md:mr-16 relative z-20"> {/* Adjusted margin and z-index */}
           <div style={{ position: 'relative', width: '500px', height: '500px' }}>
             <div
@@ -67,4 +65,4 @@ const Page2: FC = () => {
   );
 };
 
-export default Page2;
+export default Page3;
