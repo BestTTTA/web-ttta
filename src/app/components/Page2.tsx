@@ -27,7 +27,7 @@ const Page2: FC = () => {
           </p>
           <button
             className="mt-2 text-black hover:underline flex items-center"
-            title="Read more about the Tiger Team Academy">Read More
+            title="ไปยังหน้า">Read More
             <Image src={arrow} alt="Arrow icon" width={20} height={10} />
           </button>
         </div>
