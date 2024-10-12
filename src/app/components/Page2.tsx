@@ -17,11 +17,14 @@ const Page2: FC = () => {
           <div>
             <h1 className="text-orange-500 text-xl md:text-2xl font-bold">----</h1>
           </div>
-          <p className="text-gray-700">
-            The Tiger Team Academy puts great emphasis on grooming our fellow students to become 
-            entrepreneurs in technology business through direct involvement with innovation-driven 
-            research projects with famous university faculty members, and also with our affiliated 
-            companies in knowledge-based business to solve real problems of the industry...
+          <p className="text-gray-700 opacity-80">
+          The Tiger Team Academy "About" The Tiger Team Academy put <br />
+          great emphasis on grooming our fellow students to become <br />
+          entrepreneurs in technology business through direct <br />
+          involvement with innovation - driven research projects with <br />
+           famous university faculty members , and also with our <br />
+           affiliated companies in knowledge - based business to solve <br />
+           real problems of the industry...
           </p>
           <button className="mt-2 text-black hover:underline flex items-center" title="Read more about the Tiger Team Academy">
             Read More
