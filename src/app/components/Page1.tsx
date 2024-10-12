@@ -28,17 +28,9 @@ const Page1: FC = () => {
           <button className="px-6 py-4 text-sm bg-white text-black rounded-none shadow-sm hover:-translate-y-1 hover:scale-100 hover:bg-orange-500 ease-in-out delay-1 duration-100" title="ไปยังหน้า...">
             LEARN MORE
           </button>
-
         </div>
-        <div style={{ position: 'relative', width: '700px', height: '600px' }}>
-          <Image
-            src={Avatar}
-            alt="Earth in space"
-            style={{ width: '700px', height: '664px', objectFit: 'cover', overflow: 'hidden' }}
-            sizes="(max-width: 1080px) 100vw, (max-width: 1920px) 100vw, 100vw"
-            width={500}
-            height={500}
-          />
+        <div className="relative w-[700px] h-[600px]">
+          <Image src={Avatar} alt="Earth in space" className="w-[700px] h-[664px] object-cover overflow-hidden" sizes="(max-width: 1080px) 100vw, (max-width: 1920px) 100vw, 100vw" width={500} height={500} />
         </div>
       </div>
     </main>
