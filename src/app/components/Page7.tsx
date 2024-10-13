@@ -16,7 +16,6 @@ const Page7: FC = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 flex items-center justify-center mb-4">
@@ -27,7 +26,6 @@ const Page7: FC = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
           </div>
-
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 flex items-center justify-center mb-4">
               <Image src={Education} alt="Education" width={40} height={40} />
@@ -37,7 +35,6 @@ const Page7: FC = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
           </div>
-
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 flex items-center justify-center mb-4">
               <Image src={Secure} alt="Secure" width={40} height={40} />
@@ -47,7 +44,6 @@ const Page7: FC = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
           </div>
-
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 flex items-center justify-center mb-4">
               <Image src={EndlessGiving} alt="Endless Giving" width={40} height={40} />

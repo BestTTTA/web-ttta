@@ -10,12 +10,10 @@ const Page5: FC = () => {
                 <div className="flex items-center mb-8">
                 </div>
             </div>
-
             <div className="flex flex-col md:flex-row max-w-7xl">
                 <div className="md:w-1/2 mt-8 md:mt-0 md:mr-16">
                     <h1 className="text-4xl font-bold mb-4 text-center">TOKAMAK</h1>
                     <div className="text-orange-500 text-3xl font-bold text-right">-----</div>
-
                     <p className="text-gray-700 mb-8">
                         Lorem Ipsum Dolor Sit Amet Consectetur. Viae Arcu Maecenas Eu <br />
                         Lacus Donec Risus Eu. Placerat Nisl Turpis Neque Sed. A Ullamcorper. <br />
@@ -23,11 +21,9 @@ const Page5: FC = () => {
                         Tellus Fermentum Ullamcorper Venenatis Praesent Neque Dapibus
                         Cursus Fames Eget. At Nunc Maecenas Et Pretium Risus Sed.
                     </p>
-
                     <div className="text-gray-400 mt-4 text-right">
                         <p>14 July 2023</p>
                     </div>
-
                     <div className="flex items-center">
                         <button className="mt-4 text-black hover:underline flex items-center" title="ไปยังหนัา...">
                             Read More
