@@ -5,9 +5,9 @@ import arrow from "./image/Arrow.png";
 
 const Page3: FC = () => {
   return (
-    <div className="bg-gray-100 container mx-auto px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-20 flex flex-col items-center justify-center">
+    <div className="bg-gray-100 mx-auto px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-20 flex flex-col items-center justify-center">
       <div className="flex flex-col-reverse md:flex-row max-w-7xl relative">
-        <div className="md:w-1/2 w-full mt-8 md:mt-0 md:mr-16 relative z-20">
+        <div className="md:w-1/2 w-full mt-8 md:mt-0 md:mr-32 relative z-20">
           <div className="relative w-[500px] h-[500px]">
             <div className="absolute top-[280px] left-[-20px] z-[-1] bg-orange-500 w-20 h-60"></div>
             <div className="absolute top-[-20px] right-[-20px] z-[-1] bg-black w-20 h-60"></div>
