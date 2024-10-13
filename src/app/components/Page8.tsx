@@ -9,8 +9,8 @@ import Girl1 from './image/Girl2.png';
 import Girl2 from './image/Girl3.png';
 import Vector1 from './image/Vector1.png';
 import Vector2 from './image/Vector.png';
-import C1 from './image/“.png'
-import C2 from './image/”.png'
+import C1 from './image/quote-icon1.png'; 
+import C2 from './image/quote-icon2.png'; 
 
 const Page8 = () => {
   const profiles = [
@@ -38,8 +38,8 @@ const Page8 = () => {
         <h1 className="text-2xl font-bold">QUOTES FROM SUCCESSFUL PEOPLE</h1>
       </div>
       <div className="flex items-center justify-center mb-10">
-        <div onClick={handleNext} className="cursor-pointer mr-10">
-          <Image src={Vector2} alt="Next" width={50} height={50} className="w-8 h-8" />
+        <div onClick={handlePrev} className="cursor-pointer mr-10"> {/* Change to handlePrev */}
+          <Image src={Vector2} alt="Previous" width={50} height={50} className="w-8 h-8" />
         </div>
         <div className="flex justify-center items-center gap-5 relative w-[500px]">
           {profiles.map((profile, index) => (
@@ -66,19 +66,20 @@ const Page8 = () => {
       </div>
       <div className="mt-5">
         <blockquote className="italic text-gray-600">
-        <Image src={C1} alt="Quote icon" width={50} height={50} className="w-20 h-10" />
-    <p className="text-4xl font-semibold mb-2">Stay Hungry Stay Foolish</p>
-    <Image
-        src={C2}
-        alt="Quote icon"
-        width={50}
-        height={50}
-        className="w-20 h-10 absolute right-64 mr-48" />
+          <Image src={C1} alt="Quote icon" width={50} height={50} className="w-20 h-10" />
+          <p className="text-4xl font-semibold mb-2">Stay Hungry Stay Foolish</p>
+          <Image
+            src={C2}
+            alt="Quote icon"
+            width={50}
+            height={50}
+            className="w-20 h-10 absolute right-64 mr-48" 
+          />
         </blockquote>
         <p className="text-sm text-gray-500 max-w-lg mx-auto text-center">
           We should never stop learning and we should always try new things.
           We should be courageous and never be afraid to go the extra mile.
-          We must have a want, we can always build something better.
+          We must have a want; we can always build something better.
         </p>
       </div>
     </div>
