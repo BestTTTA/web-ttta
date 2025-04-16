@@ -32,25 +32,26 @@ const Page8 = () => {
   };
 
   return (
-    <div className="text-center font-sans max-w-2xl mx-auto p-5">
-      <div className="w-4 h-4 bg-orange-500 mx-auto mb-5"></div>
-      <div className="mb-5">
-        <h1 className="text-2xl font-bold">QUOTES FROM SUCCESSFUL PEOPLE</h1>
-        <p className='text-4xl text-orange-500'>----</p>
+    <div className="text-center font-sans w-full max-w-2xl mx-auto p-4 md:p-5">
+      <div className="w-4 h-4 bg-orange-500 mx-auto mb-3 md:mb-5"></div>
+      <div className="mb-3 md:mb-5">
+        <h1 className="text-xl md:text-2xl font-bold">QUOTES FROM SUCCESSFUL PEOPLE</h1>
+        <p className='text-3xl md:text-4xl text-orange-500'>----</p>
       </div>
-      <div className="flex items-center justify-center mb-10">
-        <div onClick={handlePrev} className="cursor-pointer mr-10"> {/* Change to handlePrev */}
-          <Image src={Vector2} alt="Previous" width={50} height={50} className="w-8 h-8" />
+      <div className="flex items-center justify-center mb-6 md:mb-10">
+        <div onClick={handlePrev} className="cursor-pointer mr-4 md:mr-10">
+          <Image src={Vector2} alt="Previous" width={50} height={50} className="w-6 h-6 md:w-8 md:h-8" />
         </div>
-        <div className="flex justify-center items-center gap-5 relative w-[500px]">
+        <div className="flex justify-center items-center gap-2 md:gap-5 relative w-full max-w-[300px] md:max-w-[500px]">
           {profiles.map((profile, index) => (
             <div
-            key={profile.id}
-            className={`w-20 h-20 rounded-full overflow-hidden flex justify-center items-center transition-transform duration-300 cursor-pointer shadow-lg ${index === currentProfile
-              ? 'scale-125 border-4 border-orange-500 opacity-100 z-10 drop-shadow-md'
-              : 'scale-75 border-2 border-gray-300 opacity-100 z-1'
+              key={profile.id}
+              className={`w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex justify-center items-center transition-transform duration-300 cursor-pointer shadow-lg ${
+                index === currentProfile
+                  ? 'scale-125 border-4 border-orange-500 opacity-100 z-10 drop-shadow-md'
+                  : 'scale-75 border-2 border-gray-300 opacity-100 z-1'
               }`}
-          >          
+            >          
               <Image
                 src={profile.image}
                 alt={`Profile ${profile.id}`}
@@ -61,23 +62,22 @@ const Page8 = () => {
             </div>
           ))}
         </div>
-        <div onClick={handleNext} className="cursor-pointer ml-10">
-          <Image src={Vector1} alt="Next" width={50} height={50} className="w-8 h-8" />
+        <div onClick={handleNext} className="cursor-pointer ml-4 md:ml-10">
+          <Image src={Vector1} alt="Next" width={50} height={50} className="w-6 h-6 md:w-8 md:h-8" />
         </div>
       </div>
-      <div className="mt-5 relative">
+      <div className="mt-4 md:mt-5 relative px-4">
         <blockquote className="italic text-gray-600 relative">
-          <Image src={C1} alt="Quote icon" width={50} height={50} className="w-20 h-10" />
-          <Image src={C2} alt="Quote icon" width={50} height={50} className="w-20 h-10 absolute right-0 top-20 z-0 opacity-50" />
-          <p className="text-4xl font-semibold mb-2 relative z-10">
+          <Image src={C1} alt="Quote icon" width={50} height={50} className="w-16 h-8 md:w-20 md:h-10" />
+          <Image src={C2} alt="Quote icon" width={50} height={50} className="w-16 h-8 md:w-20 md:h-10 absolute right-0 top-16 md:top-20 z-0 opacity-50" />
+          <p className="text-2xl md:text-4xl font-semibold mb-2 relative z-10">
             Stay Hungry Stay Foolish
           </p>
         </blockquote>
-        <p className="text-sm text-gray-500 max-w-lg mx-auto text-center">
+        <p className="text-xs md:text-sm text-gray-500 max-w-lg mx-auto text-center">
           We should never stop learning and we should always try new things. We should be courageous and never be afraid to go the extra mile. We must have a want; we can always build something better.
         </p>
       </div>
-
     </div>
   );
 };
